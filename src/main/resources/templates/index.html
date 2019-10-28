@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,14 +9,16 @@
 <table>
     <thead>
         <tr>
-            <th>Varenavn</th>
-            <th>Pris</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td>Kaffe</td>
-            <td>35.-</td>
+    <tbody >
+        <tr th:each="product : ${products}">
+            <td th:text="${product.name}">Kaffe</td>
+            <td th:text="${product.price}">10</td>
+            <td th:text="${product.description}">Den er god</td>
         </tr>
     </tbody>
 </table>
