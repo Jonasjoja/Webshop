@@ -1,4 +1,4 @@
-package dk.kea.dat18c.webshop.Model;
+package WebshopCRUD.Model;
 
 import org.springframework.data.annotation.Id;
 

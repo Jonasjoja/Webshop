@@ -1,4 +1,4 @@
-package dk.kea.dat18c.webshop;
+package WebshopCRUD;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
